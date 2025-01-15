@@ -1,0 +1,35 @@
+version: 1
+project:
+  title: 'Trends in Body Mass Index (BMI) Categories in the United States and the United Kingdom: A Comparitive Analysis (2000-2020)'
+  description: This paper analyzes trends in BMI categories (underweight, obesity, and morbid obesity) among adults in the United States and the United Kingdom from 2000 to 2020, highlighting gender disparities and the need for targeted public health interventions.
+  keywords:
+    - Obesity Trends
+    - Gender Disparities 
+    - Public Health Interventions
+  subject: Public Health
+  author: 
+    - name: Shaunya Uppalapati 
+      corresponding: true
+      orcid: 0009-0004-1301-1988
+      affilation: NCSSM
+      email: uppalapati26s@ncssm.edu
+      roles: 
+        - Conceptualization 
+        - Data curation 
+        - Formal analysis 
+        - Investigation 
+        - Project Administration 
+        - Software
+        - Validating 
+        - Visualization 
+        - writing 
+        - editing 
+  abbreviations: 
+    BMI: Body Mass Index
+    U.S.: United States 
+    U.K.: United Kingdom
+    NHANES: National Health and Nutrition Examination Survey
+    HSE: Health Survey for England
+
+site:
+  template: article-theme
