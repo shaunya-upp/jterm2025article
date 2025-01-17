@@ -2,6 +2,17 @@
 title: 'Global and National Perspectives on Obesity Trends: Insights from Gender-Specific Data'
 abstract: |
     Obesity has emerged as a significant public health challenge worldwide, with varying prevalence rates across genders, geographic regions, and over time. This study combines global data with national trends in the United States and the United Kingdom to examine obesity prevalence. Gender-specific obesity rates were analyzed from 1990 to 2016, leveraging visualizations including global maps and comparative line graphs. Findings indicate a steady rise in obesity prevalence across both genders, with women consistently showing higher rates. These insights underscore the need for targeted interventions to address obesity at both global and national levels.
+
+availability: |
+    The data that support the findings of this study are openly available in `jterm2025article` at (https://github.com/shaunya-upp/jterm2025article).
+
+exports:
+  - format: typst
+    template: lapreprint-typst
+    output: exports/uppalapati-jterm2025.pdf
+  - format: pdf 
+    template: arxiv_two_column 
+    output: exports/uppalapati-jterm2025.pdf
 ---
 
 ## Introduction 
@@ -22,11 +33,11 @@ Data were processed using Python and pandas for analysis and visualization. Line
 - U.K. Men: Increased from 25.0% in 2000 to 34.1% in 2020.
 
 **Global Perspective:**
-The WHO maps for 2016 (@Female-Overweight and @Male-Overweight) indicate higher obesity prevalence among females globally, particularly in the Middle East and Pacific regions, where rates exceed 60%. In contrast, male obesity prevalence is more evenly distributed, with fewer regions surpassing the 60% threshold.
+The WHO maps for 2016 (@Female-Overweight and @Male-Overweight and @Combined-Graph) indicate higher obesity prevalence among females globally, particularly in the Middle East and Pacific regions, where rates exceed 60%. In contrast, male obesity prevalence is more evenly distributed, with fewer regions surpassing the 60% threshold.
 
 **National Trends:**
-- **United States:** Obesity rates for both genders increased steadily from 1990 to 2016 (@Female-Overweight and @Male-Overweight). Women exhibited consistently higher rates, with a rise from 21.2% in 1990 to 38.5% in 2016. Men’s rates also climbed, from 19.7% to 35.2% over the same period.
-- **United Kingdom:** A similar upward trend was observed (Figure 4). Female obesity rates increased from 13.8% in 1990 to 27.5% in 2016, while male rates rose from 11.7% to 24.7%.
+- **United States:** Obesity rates for both genders increased steadily from 1990 to 2016 (@Combined-Graph). Women exhibited consistently higher rates, with a rise from 21.2% in 1990 to 38.5% in 2016. Men’s rates also climbed, from 19.7% to 35.2% over the same period.
+- **United Kingdom:** A similar upward trend was observed (@Combined-Graph). Female obesity rates increased from 13.8% in 1990 to 27.5% in 2016, while male rates rose from 11.7% to 24.7%.
 
 ## Discussion 
 The findings reveal a consistent gender disparity in obesity prevalence, with women generally exhibiting higher rates globally and nationally. This disparity may be attributed to various sociocultural, biological, and behavioral factors. Hormonal differences, such as those related to estrogen and progesterone, can influence fat distribution and metabolic processes, potentially predisposing women to higher levels of body fat. Additionally, women often face societal pressures that shape eating behaviors, including emotional eating or consumption of calorie-dense comfort foods.
@@ -51,9 +62,18 @@ The findings also highlight the need for international collaboration to tackle o
 ## Figures 
 ```{figure} images/WHO Overweight Prevalence Map Female.png
 :label: Female-Overweight
-:alt: This picture describes this and this 
+:alt: Overweight Prevalence Map for Females 
+This picture describes obesity trends in the UK and US for females from 1990 to 2016.
 ```
 
 ```{figure} images/WHO Overweight Prevalence Map Male.png
 :label: Male-Overweight
-:alt: This picture describes this and this 
+:alt: Overweight Prevalence Map for Males 
+This picture describes obesity trends in the UK and US for males from 1990 to 2016.
+```
+
+```{figure} images/Obesity_Trends_US_UK.png
+:label: Combined-Graph
+:alt: Obesity Trends for UK and US combined graph
+This picture depicts a side by side comparison of obesity trends in the UK and US for both males and females from 1990 to 2016. It can also be found in the analysis document. 
+```
